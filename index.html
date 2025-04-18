@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #ccc;
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background: white;
+            min-height: 600px;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        nav {
+            width: 100%;
+        }
+
+        nav ul {
+            margin: 5px 0 0;
+            padding: 0;
+            background: #262262;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .active,
+        nav ul li a:hover {
+            background-color: red;
+        }
+
+        .col-7 {
+            width: 70%;
+            min-height: 400px;
+            background-color: #ccc;
+            float: left;
+        }
+
+        .col-3 {
+            width: 27%;
+           min-height: 400px;
+            background-color: #ccc;
+            float: right;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .col-3 ul{
+            margin: 0;
+            padding: 0;
+        }
+        .col-3 ul li{
+            list-style: none;
+            padding: 10px;
+            border-bottom: 1px solid rgba(0, 0,0, 0.1);
+
+        }
+        .col-3 ul li:hover{
+            background-color: red;
+            color: white;
+        }
+
+        /* .footer {
+            width: 100%;
+            background-color: #b61010;
+            height: 20%;
+            clear: both;
+        } */
+
+        .full-width {
+            margin-top: 20px;
+        }
+        .content{
+            background-color: #892f2f;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+        img{
+            max-width: 100%;
+        }
+        h1{
+            margin: 10px 0;
+        }
+        p{
+            text-align: justify;
+            line-height: 30px;
+            margin-top: 20px;
+        }
+        .footer{
+            padding-top: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        @media (max-width:900px){
+            .container{
+                width: 100%;
+            }
+            nav ul li {
+            list-style: none;
+            display: block;
+            text-align: center;
+
+        }
+        h1{
+            text-align: center;
+        }
+        img{
+            width: 100%;
+        }
+        .col-7, .col-3{
+            width: 100%;
+            float: none;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </nav>
+        <div class="full-width">
+            <div class="col-7">
+                <div class="content">
+                    <h1>What is nature</h1>
+                    <img src="education.jpg" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero nam eum quis. Est expedita tenetur
+                        vero porro labore modi incidunt sint nisi hic nemo nihil, nostrum odio ipsam, soluta, ipsum ex
+                        praesentium consequuntur non atque ducimus a alias quam error. Consequuntur eos neque, unde,
+                        reiciendis quod molestias dicta dignissimos eligendi aspernatur, deserunt maxime placeat eveniet
+                        vel ipsa corrupti tempore veniam! Non, magni sit tempore corrupti sapiente nostrum aperiam harum
+                        laboriosam reiciendis, praesentium ad! Vero nobis, quae eveniet pariatur eligendi ducimus
+                        excepturi et ad facere voluptatem laborum enim, est odio vel labore sunt reprehenderit, incidunt
+                        ipsam voluptates ab! Distinctio, ex nihil.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, maxime, quos fugit facere debitis
+                        harum, nostrum illum recusandae nemo alias exercitationem dolor minus aliquid necessitatibus
+                        assumenda sequi saepe ex a. Veritatis est incidunt esse optio vero saepe, earum reprehenderit
+                        adipisci consectetur. Eius ex earum odio molestiae molestias est cupiditate ipsum in? Expedita,
+                        aut ab, ad quidem beatae omnis perferendis asperiores cumque repellat recusandae aspernatur
+                        autem? Deleniti, eius aliquid tempora totam nulla nostrum? Repellat tempore, eligendi molestias
+                        perspiciatis temporibus maiores quisquam nobis libero possimus labore, adipisci quidem, animi ut
+                        odio. Perspiciatis provident quidem vel accusamus voluptatum, nihil vero aperiam nemo placeat.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="col-3">
+                <h1>Side bar</h1>
+                <ul>
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>Services</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+
+
+        </div>
+
+        <div style="clear: both;">
+           
+        </div>
+        <div class="full-width">
+            <p class="footer">
+                &copy; 2025 responsive Web Design
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
